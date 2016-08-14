@@ -11,10 +11,14 @@
 |
 */
 
-Route::get('/', function () {
-    return 'Hi fucker!';
-});
+//Route::get('/', function () {
+//	$people = ['A','B','C'];
+//    return view('welcome', compact('people'));
+//});
 
-Route::get('about', function () {
-    return 'About page';
-});
+//Route::get('about', function () {
+//    return view('pages.about');    //resources/views/about.blade.php
+//});
+
+Route::get('/', 'PagesController@home' );
+Route::get('about', 'PagesController@about' );
