@@ -11,6 +11,10 @@
 |
 */
 
+Route::get('cards', 'CardsController@index');
+Route::get('cards/{card}', 'CardsController@show');
+
+
 //Route::get('/', function () {
 //	$people = ['A','B','C'];
 //    return view('welcome', compact('people'));
@@ -20,5 +24,5 @@
 //    return view('pages.about');    //resources/views/about.blade.php
 //});
 
-Route::get('/', 'PagesController@home' );
-Route::get('about', 'PagesController@about' );
+//Route::get('/', 'PagesController@home' );
+//Route::get('about', 'PagesController@about' );
